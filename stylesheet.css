@@ -1,0 +1,677 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+body{
+    width:100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+ul{
+  list-style-type: none;
+}
+header{
+  height:110px;
+  padding-top: 50px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+.header-container{
+  margin: 0 auto;
+  width: 86%;
+}
+.header-img{
+  background-image: url("http://pas-pol.jp/wp-content/themes/pas-pol/dist/img/siteLogo-pc@2x.png");
+  background-size: cover;
+  display: inline-block;
+  height: 70px;
+  width: 258px;
+}
+.header-left{
+  float: right;
+  margin-top: 28px;
+}
+header ul{
+  color:white;
+  list-style-type: none;
+}
+header li{
+  float: left;
+}
+header ul a{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 20px;
+  padding-bottom: 5px;
+  transition: all 0.5s;
+}
+header ul li a:hover{
+  border-bottom: solid 2px white;
+}
+.header-two{
+  display: none;
+}
+/*---------------------------------------------------------*/
+@media(max-width:900px){
+  header{
+    display: none
+  }
+  .header-two{
+    display: block;
+    position: absolute;
+    top:0;
+    width: 100%;
+    z-index: 10;
+  }
+  .header-two ul{
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .header-two li{
+    border-bottom: solid 1px white;
+    color:white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 15px 0px 15px 40px;
+    width:100%;
+  }
+  .header-two li a{
+    display: block;
+  }
+  .menu{
+    background-color: #FFFFFF;
+    width: 100%;
+  }
+  .menu h1{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 45px;
+    padding-left: 40px;
+  }
+  .menu p{
+    display: inline-block;
+    float: right;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-right: 40px;
+  }
+}
+/*-------------------------------------------------------*/
+.vegas{
+  background-position: center;
+  background-size: cover;
+  height: 580px;
+  width:100%;
+}
+.vegas-bottom{
+  height: 30px;
+  margin-top: 550px;
+  width: 100%;
+}
+.paspol{
+    background-color: #F6F6F6;
+    width: 100%;
+}
+.paspol-container{
+  margin: 0 auto;
+  padding: 100px 0;
+  width: 360px;
+}
+.paspol h1{
+  font-size: 44px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 75px;
+  padding-left: 20px;
+  padding-bottom: 35px;
+  text-align: center;
+}
+.paspol p{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  margin: 20px 0 ;
+}
+.paspol h2{
+  padding: 10px 0;
+  text-align: center;
+}
+.paspol img{
+  width: 200px;
+}
+.logo{
+  display: none;
+}
+/*------------------------------------------------------*/
+@media(max-width:900px){
+  .logo{
+    background-image: url("http://pas-pol.jp/wp-content/themes/pas-pol/dist/img/siteLogo-sp@2x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    display: block;
+    height: 200px;
+    position: relative;
+    top:170px;
+    width:100%;
+  }
+  .vegas-bottom{
+    margin-top: 350px;
+  }
+}
+@media(max-width:700px){
+  .paspol-container{
+    margin: 0 auto;
+    padding: 100px 0;
+    width: 85%;
+  }
+  .paspol h1{
+    padding-left: 0;
+    text-align: left;
+  }
+  .paspol h2{
+    text-align: left;
+  }
+}
+@media(max-width:500px){
+  .vegas{
+    margin-top: 50px;
+  }
+  .paspol-container{
+    margin: 0 auto;
+    padding: 70px 0 50px;
+    width: 360px;
+  }
+  .paspol h1{
+    font-size: 36px;
+    line-height: 50px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+  }
+  .paspol p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 20px 0 ;
+  }
+  .paspol h2{
+    padding: 0;
+  }
+  .paspol img{
+    width:140px;
+  }
+}
+/*----------------------------------------------------------*/
+.product{
+  width: 100%;
+}
+.product-container{
+  margin: 110px auto 80px;
+  max-width:920px;
+}
+.product-top{
+  background-image:url("http://pas-pol.jp/wp-content/themes/pas-pol/dist/img/sectionTitle-underLine@2x.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 70px;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 400;
+  height: 50px;
+  line-height: 30px;
+}
+.product-a{
+  border: solid 1px black;
+  display: inline-block;
+  float: right;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+  padding: 0 20px 0 60px;
+  transition: all 0.5s;
+}
+.product-a i{
+  padding-left: 40px;
+}
+.product-a:hover{
+  background-color: black;
+  color:white;
+}
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 60px auto 0;
+  width: 100%;
+}
+.pro{
+  margin: 0 15px 50px;
+  max-width: 320px;
+  width: 26%;
+}
+.pro a{
+  display: inline-block;
+  transition: all 0.5s;
+}
+.pro a:hover{
+  opacity: 0.7
+}
+.pro img{
+  max-width: 325px;
+  width: 100%;
+}
+.pro h1{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 34px;
+  margin: 10px auto 0;
+  width: 80%;
+}
+.tb{
+  display: block;
+}
+.product-a-sm{
+  display: none;
+}
+/*-----------------------------------------------------------*/
+@media(max-width:1000px){
+  .padding{
+    padding: 0 40px;
+  }
+}
+@media(max-width:780px){
+  .product-container{
+    margin: 60px auto 80px;
+    max-width:920px;
+  }
+  .products{
+    margin: 30px auto 0;
+  }
+  .pro{
+    margin: 0 15px 25px;
+    max-width: none;
+    width: 88%;
+  }
+  .pro a{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .pro img{
+    max-width: none;
+    width: 33%;
+  }
+  .pro h1{
+    box-sizing: border-box;
+    padding: 0 5px 0 10px;
+    width: 67%;
+  }
+  .tb{
+    display:none;
+  }
+  .sm{
+    display: block;
+  }
+  .product-a-sm{
+    display: none;
+  }
+}
+@media(max-width:500px){
+  .product-container{
+    margin: 60px auto 70px;
+    max-width:920px;
+  }
+  .product-top{
+    display: block;
+    margin: 0 auto;
+    width: 149px;
+  }
+  .product-a{
+    display: none;
+  }
+  .pro{
+    margin: 0px 0 50px;
+    max-width: none;
+    width: 88%;
+  }
+  .pro img{
+    width: 100%;
+  }
+  .pro h1{
+    margin-top: 0;
+    padding: 0 20px 0 40px;
+    width: 100%;
+  }
+  .sm{
+    display: none;
+  }
+  .product-a-sm{
+    border: solid 1px black;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0 auto;
+    padding: 0 20px 0 60px;
+    transition: all 0.5s;
+    width: 90px;
+  }
+  .product-a-sm i{
+    padding-left: 40px;
+  }
+}
+/*-----------------------------------------------------------*/
+.news{
+  background-color: #F6F6F6;
+  padding-top: 110px;
+  padding-bottom: 50px;
+  width: 100%;
+}
+.news-container{
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width:860px;
+}
+.news-a{
+  margin-right: 20px;
+}
+.news-top{
+  margin-left: 20px;
+}
+.articles{
+  box-sizing: border-box;
+  padding: 0 20px;
+  width: 100%;
+}
+.article{
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
+}
+.article:hover{
+  opacity: 0.7;
+}
+.article:first-of-type{
+  margin-top: 80px;
+}
+.article-img{
+  box-sizing: border-box;
+  padding-right: 10px;
+  width: 40%;
+}
+.article-img img{
+  width: 100%;
+}
+.article-text{
+  box-sizing: border-box;
+  padding-left: 20px;
+  width: 60%;
+}
+.article-text h1{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 31px;
+  padding-bottom: 8px;
+}
+.article-text p:first-of-type{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-bottom: 20px;
+}
+.article-text p:last-of-type{
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.news-a-sm{
+  display: none;
+}
+/*-----------------------------------------------------------*/
+@media(max-width:500px){
+  .articles{
+    padding: 0;
+  }
+  .article{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 0 20px;
+    width: 95%;
+  }
+  .article:first-of-type{
+    margin-top: 50px;
+  }
+  .article-img{
+    padding-right: 0;
+    width: 100%;
+  }
+  .article-text{
+    padding-left: 0;
+    width: 100%;
+  }
+  .article-text h1{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 31px;
+    padding-bottom: 5px;
+  }
+  .article-text p:last-of-type{
+    display: none;
+  }
+  .news{
+    padding-top: 70px;
+  }
+  .news-top {
+    margin: 0 auto;
+    width: 100px;
+  }
+  .news-a-sm{
+    display: block;
+    float: none;
+    margin:0 auto 20px;
+    width: 88px;
+  }
+}
+/*----------------------------------------------------------*/
+.share{
+  width: 100%;
+}
+.circle{
+  background-color: white;
+  border-radius: 50%;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+  position: relative;
+  transition: all 0.5s;
+  top:-25px;
+  width: 50px;
+}
+.circle:hover{
+  top:-30px;
+}
+.circle i{
+  padding-left: 20px;
+  position: relative;
+  top:-5px;
+}
+.sns{
+  display: block;
+  margin-bottom: 20px;
+  position: relative;
+  top:-15px;
+}
+.sns ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: center;
+}
+.sns li{
+  float: left;
+}
+.sns a{
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 15px;
+  text-align: center;
+  width: 160px;
+}
+.facebook{
+  border: solid 1px #4871A9;
+  color:#4871A9;
+  transition: all 0.5s;
+}
+.facebook:hover{
+  background-color:#4871A9;
+  color:white;
+}
+.twitter{
+  border: solid 1px #70BDD3;
+  color:#70BDD3;
+}
+.twitter:hover{
+  background-color:#70BDD3;
+  color:white;
+  transition: all 0.5s;
+}
+.bookmark{
+  border: solid 1px #2F9BCD;
+  color:#2F9BCD;
+  transition: all 0.5s;
+}
+.bookmark:hover{
+  background-color:#2F9BCD;
+  color:white;
+}
+.line {
+  display: none!important;
+}
+.clear{
+  clear: both;
+}
+/*-------------------------------------------------------*/
+@media(max-width:700px){
+  .sns a{
+    margin: 0 5px;
+  }
+  .line{
+    display: none!important;
+  }
+}
+@media(max-width:580px){
+  .sns li{
+    margin: 5px;
+    width: 41%;
+  }
+  .sns a{
+    width: 100%
+  }
+  .line{
+    border: solid 1px #8EC09D;
+    color:#8EC09D;
+    display: inline-block!important;
+    transition: all 0.5s;
+  }
+  .line:hover{
+    background-color:#8EC09D;
+    color:white;
+  }
+}
+/*--------------------------------------------------------*/
+.five{
+  background-color: #939899;
+  width: 100%;
+}
+.five-container{
+  display: flex;
+  flex-wrap: wrap;
+  height:85px;
+  justify-content: center;
+  align-items: center;
+}
+.five-a{
+  color:white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 22px;
+}
+.five-a a{
+  transition: all 0.5s;
+}
+.five-a a:hover{
+  cursor: pointer;
+  opacity: 0.5;
+}
+footer{
+  background-color: #656C6E;
+  width: 100%;
+}
+.footer-container{
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 36px 0;
+}
+footer a{
+  background-image: url("http://pas-pol.jp/wp-content/themes/pas-pol/dist/img/siteLogo-small@2x.png");
+  background-size: cover;
+  display: inline-block;
+  height: 90px;
+  transition: all 0.5s;
+  width: 90px;
+}
+footer a:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+footer p{
+  color:white;
+  float: right;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+}
+/*-----------------------------------------------------*/
+@media(max-width:580px){
+  .five-container{
+    display: block;
+    height: auto;
+  }
+  .five-a{
+    height: 54px;
+    margin: 0;
+    width: 100%;
+  }
+  .five-a a{
+    display: block;
+    height: 54px;
+    padding-top: 15px;
+    text-align: center;
+  }
+  .five-a:not(:last-of-type){
+    border-bottom: solid 1px white;
+  }
+  footer p{
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+  }
+}
+/*-----------------------------------------------------*/
