@@ -342,7 +342,9 @@ header ul li a:hover{
     width: 88%;
   }
   .pro img{
-    width: 100%;
+    display:block;
+    margin:0 auto;
+    width: 90%;
   }
   .pro h1{
     margin-top: 0;
