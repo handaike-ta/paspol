@@ -7,9 +7,9 @@ $(function() {
      { src: 'http://pas-pol.jp/wp-content/uploads/2014/11/main_visual_7-0x0.jpg' },
      { src: 'http://pas-pol.jp/wp-content/uploads/2014/11/main_visual_111-0x0.jpg' }
     ],
-     delay: 3000,
+     delay: 2500,
      timer: false,
-     transitionDuration: 1000
+     transitionDuration: 1500
   });
   $('.circle').click(function(){
     $('html,body').animate({
